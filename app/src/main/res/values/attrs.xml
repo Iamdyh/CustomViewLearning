@@ -11,4 +11,5 @@
         <attr name="titleTextColor"/>
         <attr name="titleTextSize"/>
     </declare-styleable>
+
 </resources>
