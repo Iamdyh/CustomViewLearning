@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelactiveLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res/com.dyh.customviewlearning.customview"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.dyh.customviewlearning.customview.CustomTitleView
+        android:id="@+id/id_text"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        custom:titleText="1234"
+        custom:titleTextColor="#ff0000"
+        custom:titleTextSize="40sp"/>
 
-</RelactiveLayout>
+
+
+</RelativeLayout>

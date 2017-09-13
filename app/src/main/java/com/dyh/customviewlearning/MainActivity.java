@@ -7,6 +7,7 @@ import android.widget.Button;
 import com.dyh.customviewlearning.bean.PieData;
 import com.dyh.customviewlearning.customview.CustomBaseView;
 import com.dyh.customviewlearning.customview.CustomPieView;
+import com.dyh.customviewlearning.customview.CustomTitleView;
 
 import java.util.ArrayList;
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
-        CustomPieView view = new CustomPieView(this);
+        /*CustomPieView view = new CustomPieView(this);
 
         setContentView(view);
 
@@ -31,7 +32,10 @@ public class MainActivity extends AppCompatActivity {
         datas.add(pieData3);
         datas.add(pieData4);
         datas.add(pieData5);
-        view.setData(datas);
+        view.setData(datas);*/
+
+        setContentView(R.layout.activity_customtitleview);
+
 
     }
 }
