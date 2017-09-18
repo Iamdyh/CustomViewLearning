@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.dyh.customviewlearning.R;
+import com.dyh.customviewlearning.util.DpAndSpChangeUtil;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -82,9 +83,7 @@ public class CustomTitleView extends View{
                     break;
                 case R.styleable.CustomTitleView_titleTextSize:
                     //设置默认为16sp, TypedValue也可以把sp转化为px
-                    mTitleTextSize = ta.getDimensionPixelOffset(attr,(int) TypedValue.applyDimension(
-                            TypedValue.COMPLEX_UNIT_SP, 16, getResources().getDisplayMetrics()
-                    ));
+                    mTitleTextSize = ta.getDimensionPixelOffset(attr, DpAndSpChangeUtil.sp2px(16, context));
                     break;
             }
 

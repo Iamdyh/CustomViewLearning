@@ -14,6 +14,7 @@ import android.util.TypedValue;
 import android.view.View;
 
 import com.dyh.customviewlearning.bean.PieData;
+import com.dyh.customviewlearning.util.DpAndSpChangeUtil;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -126,7 +127,8 @@ public class CustomPieView extends View {
      */
     private void drawText(Canvas canvas, float textAngle, String name, float needDrawAngle){
         Rect rect = new Rect();
-        mTextPaint.setTextSize(sp2px(15));
+        mTextPaint.setTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
+                15,getResources().getDisplayMetrics()));
         mTextPaint.getTextBounds(name, 0, name.length(), rect);
         if(textAngle >= 0 && textAngle <= 90){//画布坐标系第一象限(数学坐标系第四象限)
             if(needDrawAngle < minAngle){//如果小于某个度数,就把文字画在饼状图外面
@@ -212,13 +214,5 @@ public class CustomPieView extends View {
         }
     }
 
-    private int dp2px(int dp){
-        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
-                dp, getResources().getDisplayMetrics());
-    }
 
-    private int sp2px(int sp){
-        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
-                sp, getResources().getDisplayMetrics());
-    }
 }
