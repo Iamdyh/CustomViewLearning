@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         datas.add(pieData5);
         view.setData(datas);*/
 
-        setContentView(R.layout.activity_customtitleview);
-
+        //setContentView(R.layout.activity_customtitleview);
+        setContentView(R.layout.activity_customimagetitleview);
 
     }
 }

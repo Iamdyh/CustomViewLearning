@@ -18,8 +18,8 @@
     </declare-styleable>
 
     <!--CustomImageView-->
-    <declare-styleable name="CustomImageView">
-        <attr name="titileText"/>
+   <declare-styleable name="CustomImageView">
+        <attr name="titleText"/>
         <attr name="titleTextSize"/>
         <attr name="titleTextColor"/>
         <attr name="image"/>

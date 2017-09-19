@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dyh="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dyh.customviewlearning.customview.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        dyh:image="@mipmap/ic_launcher"
+        dyh:imageScaleType="center"
+        dyh:titleText="hello world"
+        dyh:titleTextColor="#ff0000"
+        dyh:titleTextSize="30sp"/>
+
+</LinearLayout>
