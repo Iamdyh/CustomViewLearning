@@ -9,7 +9,7 @@ import android.util.TypedValue;
 
 public class DpAndSpChangeUtil {
     public static int dp2px(int dp, Context context){
-        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 dp, context.getResources().getDisplayMetrics());
     }
 
@@ -17,4 +17,5 @@ public class DpAndSpChangeUtil {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
                 sp,context.getResources().getDisplayMetrics());
     }
+
 }

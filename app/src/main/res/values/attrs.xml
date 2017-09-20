@@ -9,6 +9,10 @@
         <enum name="fillXY" value="0"/>
         <enum name="center" value="1"/>
     </attr>
+    <attr name="firstColor" format="color"/>
+    <attr name="secondColor" format="color"/>
+    <attr name="circleWidth" format="dimension"/>
+    <attr name="speed" format="integer"/>
 
     <!--CustomTitleView-->
     <declare-styleable name="CustomTitleView">
@@ -24,5 +28,13 @@
         <attr name="titleTextColor"/>
         <attr name="image"/>
         <attr name="imageScaleType"/>
+    </declare-styleable>
+
+    <!--CustomCircleProgressBarView-->
+    <declare-styleable name="CustomCircleProgressBarView">
+        <attr name="firstColor"/>
+        <attr name="secondColor"/>
+        <attr name="circleWidth"/>
+        <attr name="speed"/>
     </declare-styleable>
 </resources>

@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         view.setData(datas);*/
 
         //setContentView(R.layout.activity_customtitleview);
-        setContentView(R.layout.activity_customimagetitleview);
+        //setContentView(R.layout.activity_customimagetitleview);
+        setContentView(R.layout.activity_customcircleprogressbarview);
 
     }
 }
