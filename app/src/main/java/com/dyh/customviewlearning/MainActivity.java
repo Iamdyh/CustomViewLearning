@@ -8,6 +8,7 @@ import com.dyh.customviewlearning.bean.PieData;
 import com.dyh.customviewlearning.customview.CustomBaseView;
 import com.dyh.customviewlearning.customview.CustomPieView;
 import com.dyh.customviewlearning.customview.CustomTitleView;
+import com.dyh.customviewlearning.customview.CustomVolumControlBarView;
 
 import java.util.ArrayList;
 
@@ -36,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         //setContentView(R.layout.activity_customtitleview);
         //setContentView(R.layout.activity_customimagetitleview);
-        setContentView(R.layout.activity_customcircleprogressbarview);
+        //setContentView(R.layout.activity_customcircleprogressbarview);
 
+        setContentView(R.layout.activity_customvolumtorview);
     }
 }

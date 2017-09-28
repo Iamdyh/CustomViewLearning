@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dyh="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.dyh.customviewlearning.customview.CustomVolumControlBarView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        dyh:bg="@drawable/bg"
+        dyh:circleWidth="12dp"
+        dyh:dotCount="20"
+        dyh:splitSize="25"
+        dyh:firstColor="#252420"
+        dyh:secondColor="#FDFDFD"
+        />
+
+</LinearLayout>
