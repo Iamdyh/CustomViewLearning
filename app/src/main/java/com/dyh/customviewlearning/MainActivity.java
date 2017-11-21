@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.dyh.customviewlearning.bean.AbilityBean;
 import com.dyh.customviewlearning.bean.PieData;
+import com.dyh.customviewlearning.customview.CustomAbilityMapView;
 import com.dyh.customviewlearning.customview.CustomBaseView;
 import com.dyh.customviewlearning.customview.CustomPieView;
 import com.dyh.customviewlearning.customview.CustomTitleView;
@@ -39,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_customimagetitleview);
         //setContentView(R.layout.activity_customcircleprogressbarview);
 
-        setContentView(R.layout.activity_customvolumtorview);
+        //setContentView(R.layout.activity_customvolumtorview);
+
+        CustomAbilityMapView view = new CustomAbilityMapView(this);
+        view.setData(new AbilityBean(10,20,40,80,90,30,50));
+        setContentView(view);
     }
 }

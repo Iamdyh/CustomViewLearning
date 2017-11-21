@@ -18,4 +18,13 @@ public class DpAndSpChangeUtil {
                 sp,context.getResources().getDisplayMetrics());
     }
 
+    public static float dp2pxF(float dp, Context context){
+        return (float) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+                dp, context.getResources().getDisplayMetrics());
+    }
+
+    public static float sp2pxF(float sp, Context context){
+        return (float) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
+                sp,context.getResources().getDisplayMetrics());
+    }
 }

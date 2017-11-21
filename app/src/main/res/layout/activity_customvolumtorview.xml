@@ -8,7 +8,7 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        dyh:bg="@drawable/bg"
+        dyh:bg="@mipmap/bg"
         dyh:circleWidth="12dp"
         dyh:dotCount="20"
         dyh:splitSize="25"
